@@ -1,1 +1,2 @@
-usr/lib/*/libaccounts-qt.so.*
+usr/lib/*/libaccounts-qt.so.1
+usr/lib/*/libaccounts-qt.so.1.*
