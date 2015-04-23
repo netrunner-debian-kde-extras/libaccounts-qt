@@ -1,6 +1,8 @@
 Source: libaccounts-qt
+Section: libs
 Priority: optional
-Maintainer: Ubuntu Desktop Team <ubuntu-desktop@lists.ubuntu.com>
+Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Maximiliano Curia <maxy@debian.org>
 Build-Depends: debhelper (>= 9),
                doxygen,
                pkg-config,
@@ -11,20 +13,11 @@ Build-Depends: debhelper (>= 9),
                qt4-qmake,
                qt5-qmake,
                qtbase5-dev,
-               libaccounts-glib-dev (>= 1.17),
-               dbus-test-runner,
-Standards-Version: 3.9.3
-Section: libs
-Homepage: http://code.google.com/p/accounts-sso/
-
-Package: libaccounts-qt1
-Section: libs
-Architecture: any
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: QT library for single sign on
- .
- This package contains shared libraries to be used by applications.
+               libaccounts-glib-dev (>= 1.17)
+Standards-Version: 3.9.6
+Homepage: https://gitlab.com/accounts-sso/libaccounts-qt
+Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/kde-extras/libaccounts-qt.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/libaccounts-qt.git
 
 Package: libaccounts-qt-dev
 Section: libdevel
@@ -34,16 +27,20 @@ Depends: libaccounts-qt1 (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libaccounts-qt5-dev (<< 1.11+14.04.20140410)
 Replaces: libaccounts-qt5-dev (<< 1.11+14.04.20140410)
-Description: QT library for single sign on - development files
+Description: Accounts database access QT version - development files
+ Accounts and SSO (Single Sign-On) framework for Linux and POSIX based
+ platforms.
  .
- This package contains files that are needed to build applications.
+ This package contains files the development files of the accounts database
+ access QT API.
 
-Package: libaccounts-qt5-1
-Section: libs
+Package: libaccounts-qt1
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: QT library for single sign on
+Description: Accounts database access QT version - shared library
+ Accounts and SSO (Single Sign-On) framework for Linux and POSIX based
+ platforms.
  .
  This package contains shared libraries to be used by applications.
 
@@ -53,14 +50,29 @@ Architecture: any
 Depends: libaccounts-qt5-1 (= ${binary:Version}),
          ${shlibs:Depends},
          ${misc:Depends}
-Description: QT library for single sign on - development files
+Description: Accounts database access QT version - qt5 development files
+ Accounts and SSO (Single Sign-On) framework for Linux and POSIX based
+ platforms.
  .
- This package contains files that are needed to build applications.
+ This package contains files the development files of the accounts database
+ access QT API.
+
+Package: libaccounts-qt5-1
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Accounts database access QT version - qt5 shared library
+ Accounts and SSO (Single Sign-On) framework for Linux and POSIX based
+ platforms.
+ .
+ This package contains shared libraries to be used by applications.
 
 Package: libaccounts-qt-doc
 Section: doc
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: QT library for single sign on - documentation
+Description: Accounts database access QT version - documentation
+ Accounts and SSO (Single Sign-On) framework for Linux and POSIX based
+ platforms.
  .
  This package contains developer documentation.
