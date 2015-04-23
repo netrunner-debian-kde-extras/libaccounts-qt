@@ -39,8 +39,8 @@ override_dh_install:
 	dh_install --fail-missing
 
 override_dh_auto_test:
-	cd build/qt4; dbus-test-runner -t make -p check; cd -
-	cd build/qt5; dbus-test-runner -t make -p check; cd -
+	cd build/qt4; xvfb-run -a dbus-launch --exit-with-session make check; cd -
+	cd build/qt5; xvfb-run -a dbus-launch --exit-with-session make check; cd -
 
 %:
-	dh $@ 
+	dh $@
