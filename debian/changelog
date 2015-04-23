@@ -1,6 +1,7 @@
 libaccounts-qt (1.13+20140905-1~) UNRELEASED; urgency=medium
 
   * Prepare Debian release. (1.13+20140905)
+  * Update copyright information.
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 23 Apr 2015 22:39:36 +0200
 
