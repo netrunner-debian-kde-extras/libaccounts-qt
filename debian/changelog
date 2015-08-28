@@ -1,7 +1,12 @@
-libaccounts-qt (1.13+20140905-1~) UNRELEASED; urgency=medium
+libaccounts-qt (1.13+20150813-1~) UNRELEASED; urgency=medium
 
+  [ Maximiliano Curia ]
   * Prepare Debian release. (1.13+20140905)
   * Update copyright information.
+
+  [ Diane Trout ]
+  * Use upstream snapshot 207139e65e6707100d2e92d96b1a4c3bfaa88a5f
+  * Prepare Debian release (1.13+20150813)
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 23 Apr 2015 22:39:36 +0200
 
