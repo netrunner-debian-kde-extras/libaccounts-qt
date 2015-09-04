@@ -8,6 +8,7 @@ libaccounts-qt (1.13+20150813-1~) UNRELEASED; urgency=medium
   * Use upstream snapshot 207139e65e6707100d2e92d96b1a4c3bfaa88a5f
   * Prepare Debian release (1.13+20150813)
   * Add symbols files for libaccounts-qt1 and libaccounts-qt5-1
+  * Replace convience copy of jquery.js with link to system version
   * Add myself to uploaders.
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 23 Apr 2015 22:39:36 +0200

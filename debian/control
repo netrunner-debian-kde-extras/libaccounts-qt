@@ -6,6 +6,7 @@ Uploaders: Maximiliano Curia <maxy@debian.org>,
  Diane Trout <diane@debian.org>
 Build-Depends: debhelper (>= 9),
                doxygen,
+               libjs-jquery,
                pkg-config,
                libglib2.0-dev,
                libqt4-dev,
