@@ -1,0 +1,13 @@
+Document: libaccounts-qt-doc
+Title: libaccounts-qt documentation
+Abstract: API for accessing libaccount storage:
+ retrieval, editing, creation of accounts, as well as
+ enumeation of the currently installed count providers and
+ services.
+Section: Programming/C++
+
+Format: HTML
+Index: /usr/share/doc/accounts-qt/html/index.html
+Files: /usr/share/doc/accounts-qt/html/*.html
+       /usr/share/doc/accounts-qt/html/*.png
+       /usr/share/doc/accounts-qt/html/*.js
